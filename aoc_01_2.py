@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import Generator
 
-INPUT_FILE = 'aoc1_input.txt'  # Solution: 23387399
+INPUT_FILE = 'aoc_01.txt'  # Solution: 23387399
 
 def parse_lines() -> tuple[list[int], list[int]]:
     col_1, col_2 = [], []

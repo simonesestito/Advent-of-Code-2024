@@ -1,6 +1,6 @@
 from typing import Generator
 
-INPUT_FILE = 'aoc2_input.txt'  # Solution: 218
+INPUT_FILE = 'aoc_02.txt'  # Solution: 218
 
 Report = list[int]
 

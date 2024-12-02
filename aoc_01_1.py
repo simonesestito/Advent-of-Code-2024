@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import Generator
 
-INPUT_FILE = 'aoc1_input.txt'  # Solution: 1197984
+INPUT_FILE = 'aoc_01.txt'  # Solution: 1197984
 
 def parse_lines() -> tuple[list[int], list[int]]:
     col_1, col_2 = [], []
@@ -21,6 +21,7 @@ def parse_lines() -> tuple[list[int], list[int]]:
 def compute_distance_in_pair(col_1: list[int], col_2: list[int]) -> Generator[int, None, None]:
     for num_1, num_2 in zip(col_1, col_2):
         yield abs(num_1 - num_2)
+
 
 def main():
     col_1, col_2 = parse_lines()
