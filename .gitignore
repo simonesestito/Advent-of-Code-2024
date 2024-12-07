@@ -1,2 +1,3 @@
 *.txt
 input
+__pycache__
