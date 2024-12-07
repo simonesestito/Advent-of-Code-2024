@@ -1,9 +1,4 @@
-from utils import safe_matrix_get
-
-
-def read_matrix(filename: str = 'aoc_04.txt') -> list[str]:
-    with open(filename, 'r') as file:
-        return [l.strip() for l in file.readlines()]
+from aoc_04_utils import safe_matrix_get, read_matrix
 
 
 def count_xmas(matrix: list[str]) -> int:
