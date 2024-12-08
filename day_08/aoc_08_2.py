@@ -1,5 +1,6 @@
 from aoc_08_utils import FrequenciesTable, Coordinate, MapSize, iter_pairs, read_input, within_matrix_area
 from typing import Generator
+import sys
 
 
 def identify_all_antinodes(freqs: FrequenciesTable, size: MapSize) -> Generator[Coordinate, None, None]:
@@ -58,10 +59,10 @@ def visualize_resulting_antinodes(test_filename: str = 'aoc_08_example.txt'):
             matrix[i][j] = '#'
 
     for row in matrix:
-        print(''.join(row))
+        print(''.join(row), file=sys.stderr)
 
     test_result = count_unique_antinodes(freqs, size)
-    print('\nResult for test input:', test_result, end='\n\n')
+    print('\nResult for test input:', test_result, end='\n\n', file=sys.stderr, flush=True)
 
 
 def main():
