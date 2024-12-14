@@ -10,7 +10,7 @@ class Robot:
         self.pos_y = (self.pos_y + self.vel_y * steps) % rows
 
 
-def read_input(filename: str = 'aoc_13.txt') -> list[Robot]:
+def read_input(filename: str = 'aoc_14.txt') -> list[Robot]:
     robots: list[Robot] = []
 
     with open(filename) as f:
