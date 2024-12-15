@@ -1,3 +1,9 @@
+# Do not commit personal input files...
 *.txt
 input
+
+# ...but still, commit the examples from the public assignment page
+!aoc_??_example*.txt
+
+# Other things to ignore:
 __pycache__
