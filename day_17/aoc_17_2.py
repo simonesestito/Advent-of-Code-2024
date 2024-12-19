@@ -54,7 +54,7 @@ def find_last_bits_for_a(instructions: list[Instruction], steps: int, suffix: in
 
     # Try all values for a, showing progress bar only in the first process
     a_prefix = 0
-    for a_prefix in range(2**10):
+    for a_prefix in range(0b11111):
         suffix_len = 3 * steps
         a = a_prefix * 2 ** suffix_len + suffix
         state.reset(a=a, expected_output=expected_output)
