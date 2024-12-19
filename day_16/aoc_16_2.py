@@ -63,7 +63,7 @@ def solve_maze(maze: Maze) -> int:
 
 def main(filename: str = 'aoc_16.txt', expected: int = None):
     maze = read_input(filename)
-    result = solve_maze(maze)    
+    result = solve_maze(maze)
 
     print(f'{filename=}')
     print(f'{result=}')

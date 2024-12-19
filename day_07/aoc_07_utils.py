@@ -3,7 +3,6 @@ Common utility functions for both parts of day 7
 '''
 
 from typing import TypeAlias, Generator, Callable, Iterable
-from tqdm import tqdm
 
 
 Equation: TypeAlias = tuple[int, list[int]]
@@ -51,7 +50,7 @@ def can_evaluate(
 
 def sum_valid_results(inputs: Iterable[Equation], all_operators: list[Operator]) -> int:
     count = 0
-    for result, operands in tqdm(inputs):
+    for result, operands in inputs:
         if can_evaluate(result, operands, all_operators):
             count += result
     return count

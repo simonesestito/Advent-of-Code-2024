@@ -39,8 +39,7 @@ def find_mul(input_str: str) -> Generator[int, None, None]:
         yield a * b
 
 
-def main():
-    input_str = read_input()
+def solution(input_str: str) -> int:
     actual_operations = find_actual_operations(input_str)
 
     # Use a standard for to make it more readable
@@ -48,6 +47,13 @@ def main():
     for inner_operations in actual_operations:
         inner_result = sum(find_mul(inner_operations))
         result += inner_result
+        
+    return result
+
+
+def main():
+    input_str = read_input()
+    result = solution(input_str)
         
     print(result)
 
